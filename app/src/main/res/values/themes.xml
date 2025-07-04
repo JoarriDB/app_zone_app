@@ -1,8 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.App_s10" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Gaming theme colors -->
+        <item name="colorPrimary">@color/gaming_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/gaming_cyan</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/gaming_bg_primary</item>
+        <item name="colorSurface">@color/gaming_surface</item>
+        <item name="colorOnSurface">@color/gaming_text_primary</item>
+
+        <!-- Text input styling -->
+        <item name="editTextColor">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/gaming_text_hint</item>
+        <item name="colorControlNormal">@color/gaming_purple</item>
+        <item name="colorControlActivated">@color/gaming_cyan</item>
+        <item name="colorControlHighlight">@color/gaming_purple</item>
     </style>
 
     <style name="Theme.App_s10" parent="Base.Theme.App_s10" />

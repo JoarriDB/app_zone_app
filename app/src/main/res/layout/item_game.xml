@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/gaming_surface"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header con título y estado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvGameTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Título del Juego"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/gaming_text_primary"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="The Legend of Zelda: Breath of the Wild" />
+
+            <!-- Badge de completado -->
+            <TextView
+                android:id="@+id/tvCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅ COMPLETADO"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/gaming_neon_green"
+                android:background="@drawable/gaming_button_secondary"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <!-- Información del juego -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- Género -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎮 "
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvGameGenre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Género"
+                    android:textSize="14sp"
+                    android:textColor="@color/gaming_cyan"
+                    android:textStyle="bold"
+                    tools:text="Aventura" />
+
+            </LinearLayout>
+
+            <!-- Plataforma -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📱 "
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvGamePlatform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plataforma"
+                    android:textSize="14sp"
+                    android:textColor="@color/gaming_purple"
+                    android:textStyle="bold"
+                    tools:text="Nintendo Switch" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Rating y año -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <!-- Rating -->
+            <RatingBar
+                android:id="@+id/ratingBarItem"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="4.5"
+                android:isIndicator="true"
+                android:progressTint="@color/gaming_highlight"
+                android:secondaryProgressTint="@color/gaming_text_hint"
+                tools:rating="4.5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="•"
+                android:textColor="@color/gaming_text_hint" />
+
+            <!-- Año -->
+            <TextView
+                android:id="@+id/tvGameYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025"
+                android:textSize="14sp"
+                android:textColor="@color/gaming_text_secondary"
+                tools:text="2017" />
+
+        </LinearLayout>
+
+        <!-- Descripción (si existe) -->
+        <TextView
+            android:id="@+id/tvGameDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del juego..."
+            android:textSize="13sp"
+            android:textColor="@color/gaming_text_secondary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:text="Un increíble juego de aventuras en mundo abierto que redefine la saga de Zelda." />
+
+        <!-- Footer con fecha -->
+        <TextView
+            android:id="@+id/tvGameDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregado hace 2 días"
+            android:textSize="11sp"
+            android:textColor="@color/gaming_text_hint"
+            android:layout_gravity="end"
+            tools:text="Agregado el 25 jun 2025" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

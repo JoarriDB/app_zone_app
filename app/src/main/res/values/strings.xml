@@ -1,32 +1,32 @@
 <resources>
     <string name="app_name">GameVault</string>
-    
+
     <!-- 🎮 Pantalla de Login - Tema Gaming -->
     <string name="login_title">¡Bienvenido Gamer!</string>
     <string name="login_subtitle">Inicia sesión para acceder a tu zona de juego</string>
-    
+
     <!-- Campos de entrada -->
     <string name="email_hint">Correo electrónico</string>
     <string name="password_hint">Contraseña</string>
     <string name="confirm_password_hint">Confirmar contraseña</string>
-    
+
     <!-- Botones principales -->
     <string name="btn_login">INICIAR SESIÓN</string>
     <string name="btn_register">REGISTRARSE</string>
     <string name="btn_logout">CERRAR SESIÓN</string>
     <string name="btn_forgot_password">¿Olvidaste tu contraseña?</string>
-    
+
     <!-- Enlaces y opciones -->
     <string name="link_no_account">¿No tienes cuenta? Regístrate aquí</string>
     <string name="link_have_account">¿Ya tienes cuenta? Inicia sesión</string>
     <string name="guest_login">Continuar como invitado</string>
-    
+
     <!-- Mensajes de estado -->
     <string name="loading">Cargando...</string>
     <string name="login_success">¡Bienvenido de vuelta, gamer!</string>
     <string name="register_success">¡Cuenta creada exitosamente!</string>
     <string name="logout_success">¡Hasta la próxima partida!</string>
-    
+
     <!-- Mensajes de error -->
     <string name="error_empty_email">Por favor ingresa tu correo electrónico</string>
     <string name="error_empty_password">Por favor ingresa tu contraseña</string>
@@ -39,32 +39,66 @@
     <string name="error_user_not_found">Usuario no encontrado</string>
     <string name="error_wrong_password">Contraseña incorrecta</string>
     <string name="error_email_already_in_use">Este correo ya está registrado</string>
-    
+
     <!-- Pantalla principal después del login -->
     <string name="welcome_user">¡Hola, %1$s!</string>
     <string name="main_title">Panel de Control Gaming</string>
     <string name="main_subtitle">Tu zona de juego personalizada</string>
-    
+
     <!-- Elementos de la interfaz -->
     <string name="player_stats">Estadísticas del Jugador</string>
     <string name="achievements">Logros</string>
     <string name="settings">Configuración</string>
     <string name="profile">Perfil</string>
-    
+
+    <!-- 🎮 NUEVOS: Sistema de Registro de Juegos -->
+    <string name="add_game">Agregar Juego</string>
+    <string name="view_games">Mi Biblioteca</string>
+    <string name="game_library">Biblioteca de Juegos</string>
+    <string name="my_games">Mis Juegos</string>
+    <string name="add_new_game">Agregar Nuevo Juego</string>
+    <string name="game_title">Título del Juego</string>
+    <string name="game_genre">Género</string>
+    <string name="game_platform">Plataforma</string>
+    <string name="game_description">Descripción</string>
+    <string name="game_year">Año de Lanzamiento</string>
+    <string name="game_rating">Calificación</string>
+    <string name="game_completed">Completado</string>
+    <string name="save_game">Guardar Juego</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete_game">Eliminar Juego</string>
+    <string name="edit_game">Editar Juego</string>
+    <string name="filter_all">Todos</string>
+    <string name="filter_completed">Completados</string>
+    <string name="filter_pending">Pendientes</string>
+    <string name="total_games">Total de Juegos</string>
+    <string name="completed_games">Juegos Completados</string>
+    <string name="average_rating">Rating Promedio</string>
+    <string name="no_games_yet">¡Aún no tienes juegos!</string>
+    <string name="start_adding_games">Comienza agregando tu primer juego a tu biblioteca personal</string>
+
     <!-- Mensajes generales -->
     <string name="ok">OK</string>
-    <string name="cancel">Cancelar</string>
     <string name="retry">Reintentar</string>
     <string name="continue_text">Continuar</string>
-    
+
     <!-- Firebase Authentication específico -->
     <string name="auth_verification_email_sent">Correo de verificación enviado</string>
     <string name="auth_email_verification_required">Verifica tu correo electrónico para continuar</string>
     <string name="auth_password_reset_sent">Correo de recuperación enviado</string>
-    
+
     <!-- Gaming themed messages -->
     <string name="level_up">¡Subiste de nivel!</string>
     <string name="game_over">Game Over</string>
     <string name="new_high_score">¡Nuevo récord!</string>
     <string name="achievement_unlocked">¡Logro desbloqueado!</string>
+
+    <!-- Mensajes de éxito del sistema de juegos -->
+    <string name="game_saved_success">¡Juego guardado exitosamente!</string>
+    <string name="game_deleted_success">Juego eliminado correctamente</string>
+    <string name="game_updated_success">Juego actualizado</string>
+
+    <!-- Descripciones de contenido -->
+    <string name="add_game_description">Agregar un nuevo juego a tu biblioteca</string>
+    <string name="view_games_description">Ver todos tus juegos registrados</string>
 </resources>
